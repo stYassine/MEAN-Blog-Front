@@ -1,0 +1,19 @@
+<div class="row">
+  
+  <!-- Single Article -->
+  <div class="col-md-6" *ngFor="let article of articles">
+    <div class="card">
+      <div class="card-header">
+        <h4>{{ article.title }}</h4>
+      </div>
+      <div class="card-body">
+        <p>{{ article.body }}</p>
+      </div>
+      <div class="card-footer">
+        <a href="#" routerLink="article/{{ article._id }}">View</a>
+      </div>
+    </div><br>
+  </div>
+  <!-- Single Article -->
+
+</div>

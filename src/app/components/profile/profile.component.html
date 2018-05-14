@@ -1,0 +1,27 @@
+<div class="jumbotron text-center">
+  <p>{{ user.first_name }}</p>
+  <p>{{ user.email }}</p>
+
+  <div class="row">
+
+    <div class="col-md-4">
+      <h6>Articles : {{ articles.length }}</h6>
+      <a href="" routerLink="/profile/{{user._id}}/articles">View</a>
+    </div>
+
+    <div class="col-md-4">
+      <h6>Comments : {{ comments.length }}</h6>
+      <a href="" routerLink="/profile/{{user._id}}/comments">View</a>
+    </div>
+
+    <div class="col-md-4">
+      <h6>Likes : 10</h6>
+      <a href="" routerLink="/profile/{{user._id}}/likes">View</a>
+  </div>
+
+
+  </div>
+
+</div>
+
+<router-outlet></router-outlet>
